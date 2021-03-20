@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,18 @@
 		262A694B260566B900B8E025 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 262A6949260566B900B8E025 /* LaunchScreen.storyboard */; };
 		262A6956260566B900B8E025 /* clipAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262A6955260566B900B8E025 /* clipAppTests.swift */; };
 		262A6961260566B900B8E025 /* clipAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262A6960260566B900B8E025 /* clipAppUITests.swift */; };
+		26EF5E2226066B4400AB9995 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EF5E2126066B4400AB9995 /* AppDelegate.swift */; };
+		26EF5E2426066B4400AB9995 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EF5E2326066B4400AB9995 /* SceneDelegate.swift */; };
+		26EF5E2626066B4400AB9995 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EF5E2526066B4400AB9995 /* ViewController.swift */; };
+		26EF5E2926066B4400AB9995 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5E2726066B4400AB9995 /* Main.storyboard */; };
+		26EF5E2C26066B4400AB9995 /* appClip.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 26EF5E2A26066B4400AB9995 /* appClip.xcdatamodeld */; };
+		26EF5E2E26066B4500AB9995 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5E2D26066B4500AB9995 /* Assets.xcassets */; };
+		26EF5E3126066B4500AB9995 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26EF5E2F26066B4500AB9995 /* LaunchScreen.storyboard */; };
+		26EF5E3D26066B4500AB9995 /* appClipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EF5E3C26066B4500AB9995 /* appClipTests.swift */; };
+		26EF5E4826066B4500AB9995 /* appClipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EF5E4726066B4500AB9995 /* appClipUITests.swift */; };
+		26EF5E4C26066B4500AB9995 /* appClip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 26EF5E1F26066B4400AB9995 /* appClip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		26EF5E6626066D3A00AB9995 /* SharedData in Frameworks */ = {isa = PBXBuildFile; productRef = 26EF5E6526066D3A00AB9995 /* SharedData */; };
+		26EF5E6826066D4200AB9995 /* SharedData in Frameworks */ = {isa = PBXBuildFile; productRef = 26EF5E6726066D4200AB9995 /* SharedData */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +45,42 @@
 			remoteGlobalIDString = 262A6937260566B800B8E025;
 			remoteInfo = clipApp;
 		};
+		26EF5E3926066B4500AB9995 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 262A6930260566B800B8E025 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26EF5E1E26066B4400AB9995;
+			remoteInfo = appClip;
+		};
+		26EF5E4426066B4500AB9995 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 262A6930260566B800B8E025 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26EF5E1E26066B4400AB9995;
+			remoteInfo = appClip;
+		};
+		26EF5E4A26066B4500AB9995 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 262A6930260566B800B8E025 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26EF5E1E26066B4400AB9995;
+			remoteInfo = appClip;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		26EF5E5026066B4500AB9995 /* Embed App Clips */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
+			dstSubfolderSpec = 16;
+			files = (
+				26EF5E4C26066B4500AB9995 /* appClip.app in Embed App Clips */,
+			);
+			name = "Embed App Clips";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		262A6938260566B800B8E025 /* clipApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clipApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +98,26 @@
 		262A695C260566B900B8E025 /* clipAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = clipAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		262A6960260566B900B8E025 /* clipAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clipAppUITests.swift; sourceTree = "<group>"; };
 		262A6962260566B900B8E025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26EF5E1A26066A9800AB9995 /* clipApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = clipApp.entitlements; sourceTree = "<group>"; };
+		26EF5E1F26066B4400AB9995 /* appClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appClip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26EF5E2126066B4400AB9995 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		26EF5E2326066B4400AB9995 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		26EF5E2526066B4400AB9995 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		26EF5E2826066B4400AB9995 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		26EF5E2B26066B4400AB9995 /* appClip.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = appClip.xcdatamodel; sourceTree = "<group>"; };
+		26EF5E2D26066B4500AB9995 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		26EF5E3026066B4500AB9995 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		26EF5E3226066B4500AB9995 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26EF5E3326066B4500AB9995 /* appClip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = appClip.entitlements; sourceTree = "<group>"; };
+		26EF5E3826066B4500AB9995 /* appClipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = appClipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		26EF5E3C26066B4500AB9995 /* appClipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appClipTests.swift; sourceTree = "<group>"; };
+		26EF5E3E26066B4500AB9995 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26EF5E4326066B4500AB9995 /* appClipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = appClipUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		26EF5E4726066B4500AB9995 /* appClipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appClipUITests.swift; sourceTree = "<group>"; };
+		26EF5E4926066B4500AB9995 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26EF5E5D26066CCA00AB9995 /* SharedData */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SharedData; sourceTree = "<group>"; };
+		26EF5E6F2606737300AB9995 /* exampleCode.svg */ = {isa = PBXFileReference; lastKnownFileType = file; path = exampleCode.svg; sourceTree = SOURCE_ROOT; };
+		26EF5E70260673B900AB9995 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26EF5E6626066D3A00AB9995 /* SharedData in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,16 +143,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		26EF5E1C26066B4400AB9995 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26EF5E6826066D4200AB9995 /* SharedData in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26EF5E3526066B4500AB9995 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26EF5E4026066B4500AB9995 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		262A692F260566B800B8E025 = {
 			isa = PBXGroup;
 			children = (
+				26EF5E70260673B900AB9995 /* README.md */,
+				26EF5E6F2606737300AB9995 /* exampleCode.svg */,
 				262A693A260566B800B8E025 /* clipApp */,
+				26EF5E5D26066CCA00AB9995 /* SharedData */,
 				262A6954260566B900B8E025 /* clipAppTests */,
 				262A695F260566B900B8E025 /* clipAppUITests */,
+				26EF5E2026066B4400AB9995 /* appClip */,
+				26EF5E3B26066B4500AB9995 /* appClipTests */,
+				26EF5E4626066B4500AB9995 /* appClipUITests */,
 				262A6939260566B800B8E025 /* Products */,
+				26EF5E6426066D3A00AB9995 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +191,9 @@
 				262A6938260566B800B8E025 /* clipApp.app */,
 				262A6951260566B900B8E025 /* clipAppTests.xctest */,
 				262A695C260566B900B8E025 /* clipAppUITests.xctest */,
+				26EF5E1F26066B4400AB9995 /* appClip.app */,
+				26EF5E3826066B4500AB9995 /* appClipTests.xctest */,
+				26EF5E4326066B4500AB9995 /* appClipUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +201,7 @@
 		262A693A260566B800B8E025 /* clipApp */ = {
 			isa = PBXGroup;
 			children = (
+				26EF5E1A26066A9800AB9995 /* clipApp.entitlements */,
 				262A693B260566B800B8E025 /* AppDelegate.swift */,
 				262A693D260566B800B8E025 /* SceneDelegate.swift */,
 				262A693F260566B800B8E025 /* ViewController.swift */,
@@ -131,6 +232,47 @@
 			path = clipAppUITests;
 			sourceTree = "<group>";
 		};
+		26EF5E2026066B4400AB9995 /* appClip */ = {
+			isa = PBXGroup;
+			children = (
+				26EF5E2126066B4400AB9995 /* AppDelegate.swift */,
+				26EF5E2326066B4400AB9995 /* SceneDelegate.swift */,
+				26EF5E2526066B4400AB9995 /* ViewController.swift */,
+				26EF5E2726066B4400AB9995 /* Main.storyboard */,
+				26EF5E2D26066B4500AB9995 /* Assets.xcassets */,
+				26EF5E2F26066B4500AB9995 /* LaunchScreen.storyboard */,
+				26EF5E3226066B4500AB9995 /* Info.plist */,
+				26EF5E3326066B4500AB9995 /* appClip.entitlements */,
+				26EF5E2A26066B4400AB9995 /* appClip.xcdatamodeld */,
+			);
+			path = appClip;
+			sourceTree = "<group>";
+		};
+		26EF5E3B26066B4500AB9995 /* appClipTests */ = {
+			isa = PBXGroup;
+			children = (
+				26EF5E3C26066B4500AB9995 /* appClipTests.swift */,
+				26EF5E3E26066B4500AB9995 /* Info.plist */,
+			);
+			path = appClipTests;
+			sourceTree = "<group>";
+		};
+		26EF5E4626066B4500AB9995 /* appClipUITests */ = {
+			isa = PBXGroup;
+			children = (
+				26EF5E4726066B4500AB9995 /* appClipUITests.swift */,
+				26EF5E4926066B4500AB9995 /* Info.plist */,
+			);
+			path = appClipUITests;
+			sourceTree = "<group>";
+		};
+		26EF5E6426066D3A00AB9995 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,12 +283,17 @@
 				262A6934260566B800B8E025 /* Sources */,
 				262A6935260566B800B8E025 /* Frameworks */,
 				262A6936260566B800B8E025 /* Resources */,
+				26EF5E5026066B4500AB9995 /* Embed App Clips */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				26EF5E4B26066B4500AB9995 /* PBXTargetDependency */,
 			);
 			name = clipApp;
+			packageProductDependencies = (
+				26EF5E6526066D3A00AB9995 /* SharedData */,
+			);
 			productName = clipApp;
 			productReference = 262A6938260566B800B8E025 /* clipApp.app */;
 			productType = "com.apple.product-type.application";
@@ -187,6 +334,62 @@
 			productReference = 262A695C260566B900B8E025 /* clipAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		26EF5E1E26066B4400AB9995 /* appClip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26EF5E4D26066B4500AB9995 /* Build configuration list for PBXNativeTarget "appClip" */;
+			buildPhases = (
+				26EF5E1B26066B4400AB9995 /* Sources */,
+				26EF5E1C26066B4400AB9995 /* Frameworks */,
+				26EF5E1D26066B4400AB9995 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = appClip;
+			packageProductDependencies = (
+				26EF5E6726066D4200AB9995 /* SharedData */,
+			);
+			productName = appClip;
+			productReference = 26EF5E1F26066B4400AB9995 /* appClip.app */;
+			productType = "com.apple.product-type.application.on-demand-install-capable";
+		};
+		26EF5E3726066B4500AB9995 /* appClipTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26EF5E5126066B4500AB9995 /* Build configuration list for PBXNativeTarget "appClipTests" */;
+			buildPhases = (
+				26EF5E3426066B4500AB9995 /* Sources */,
+				26EF5E3526066B4500AB9995 /* Frameworks */,
+				26EF5E3626066B4500AB9995 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26EF5E3A26066B4500AB9995 /* PBXTargetDependency */,
+			);
+			name = appClipTests;
+			productName = appClipTests;
+			productReference = 26EF5E3826066B4500AB9995 /* appClipTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		26EF5E4226066B4500AB9995 /* appClipUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26EF5E5426066B4500AB9995 /* Build configuration list for PBXNativeTarget "appClipUITests" */;
+			buildPhases = (
+				26EF5E3F26066B4500AB9995 /* Sources */,
+				26EF5E4026066B4500AB9995 /* Frameworks */,
+				26EF5E4126066B4500AB9995 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26EF5E4526066B4500AB9995 /* PBXTargetDependency */,
+			);
+			name = appClipUITests;
+			productName = appClipUITests;
+			productReference = 26EF5E4326066B4500AB9995 /* appClipUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -207,6 +410,17 @@
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = 262A6937260566B800B8E025;
 					};
+					26EF5E1E26066B4400AB9995 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					26EF5E3726066B4500AB9995 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 26EF5E1E26066B4400AB9995;
+					};
+					26EF5E4226066B4500AB9995 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 26EF5E1E26066B4400AB9995;
+					};
 				};
 			};
 			buildConfigurationList = 262A6933260566B800B8E025 /* Build configuration list for PBXProject "clipApp" */;
@@ -225,6 +439,9 @@
 				262A6937260566B800B8E025 /* clipApp */,
 				262A6950260566B900B8E025 /* clipAppTests */,
 				262A695B260566B900B8E025 /* clipAppUITests */,
+				26EF5E1E26066B4400AB9995 /* appClip */,
+				26EF5E3726066B4500AB9995 /* appClipTests */,
+				26EF5E4226066B4500AB9995 /* appClipUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -248,6 +465,30 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		262A695A260566B900B8E025 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26EF5E1D26066B4400AB9995 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26EF5E3126066B4500AB9995 /* LaunchScreen.storyboard in Resources */,
+				26EF5E2E26066B4500AB9995 /* Assets.xcassets in Resources */,
+				26EF5E2926066B4400AB9995 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26EF5E3626066B4500AB9995 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26EF5E4126066B4500AB9995 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -284,6 +525,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		26EF5E1B26066B4400AB9995 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26EF5E2626066B4400AB9995 /* ViewController.swift in Sources */,
+				26EF5E2C26066B4400AB9995 /* appClip.xcdatamodeld in Sources */,
+				26EF5E2226066B4400AB9995 /* AppDelegate.swift in Sources */,
+				26EF5E2426066B4400AB9995 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26EF5E3426066B4500AB9995 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26EF5E3D26066B4500AB9995 /* appClipTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26EF5E3F26066B4500AB9995 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26EF5E4826066B4500AB9995 /* appClipUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -296,6 +564,21 @@
 			isa = PBXTargetDependency;
 			target = 262A6937260566B800B8E025 /* clipApp */;
 			targetProxy = 262A695D260566B900B8E025 /* PBXContainerItemProxy */;
+		};
+		26EF5E3A26066B4500AB9995 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26EF5E1E26066B4400AB9995 /* appClip */;
+			targetProxy = 26EF5E3926066B4500AB9995 /* PBXContainerItemProxy */;
+		};
+		26EF5E4526066B4500AB9995 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26EF5E1E26066B4400AB9995 /* appClip */;
+			targetProxy = 26EF5E4426066B4500AB9995 /* PBXContainerItemProxy */;
+		};
+		26EF5E4B26066B4500AB9995 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26EF5E1E26066B4400AB9995 /* appClip */;
+			targetProxy = 26EF5E4A26066B4500AB9995 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -312,6 +595,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				262A694A260566B900B8E025 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		26EF5E2726066B4400AB9995 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26EF5E2826066B4400AB9995 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		26EF5E2F26066B4500AB9995 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26EF5E3026066B4500AB9995 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -438,8 +737,10 @@
 		262A6966260566B900B8E025 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = clipApp/clipApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 63PCR2P9LY;
 				INFOPLIST_FILE = clipApp/Info.plist;
@@ -457,8 +758,10 @@
 		262A6967260566B900B8E025 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = clipApp/clipApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 63PCR2P9LY;
 				INFOPLIST_FILE = clipApp/Info.plist;
@@ -557,6 +860,130 @@
 			};
 			name = Release;
 		};
+		26EF5E4E26066B4500AB9995 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = appClip/appClip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63PCR2P9LY;
+				INFOPLIST_FILE = appClip/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.queuez.clipApp.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		26EF5E4F26066B4500AB9995 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = appClip/appClip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63PCR2P9LY;
+				INFOPLIST_FILE = appClip/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.queuez.clipApp.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		26EF5E5226066B4500AB9995 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63PCR2P9LY;
+				INFOPLIST_FILE = appClipTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.queuez.clipApp.appClipTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/appClip.app/appClip";
+			};
+			name = Debug;
+		};
+		26EF5E5326066B4500AB9995 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63PCR2P9LY;
+				INFOPLIST_FILE = appClipTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.queuez.clipApp.appClipTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/appClip.app/appClip";
+			};
+			name = Release;
+		};
+		26EF5E5526066B4500AB9995 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63PCR2P9LY;
+				INFOPLIST_FILE = appClipUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.queuez.clipApp.appClipUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = appClip;
+			};
+			name = Debug;
+		};
+		26EF5E5626066B4500AB9995 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63PCR2P9LY;
+				INFOPLIST_FILE = appClipUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.queuez.clipApp.appClipUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = appClip;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -596,7 +1023,45 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		26EF5E4D26066B4500AB9995 /* Build configuration list for PBXNativeTarget "appClip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26EF5E4E26066B4500AB9995 /* Debug */,
+				26EF5E4F26066B4500AB9995 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26EF5E5126066B4500AB9995 /* Build configuration list for PBXNativeTarget "appClipTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26EF5E5226066B4500AB9995 /* Debug */,
+				26EF5E5326066B4500AB9995 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26EF5E5426066B4500AB9995 /* Build configuration list for PBXNativeTarget "appClipUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26EF5E5526066B4500AB9995 /* Debug */,
+				26EF5E5626066B4500AB9995 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		26EF5E6526066D3A00AB9995 /* SharedData */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharedData;
+		};
+		26EF5E6726066D4200AB9995 /* SharedData */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharedData;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		262A6944260566B800B8E025 /* clipApp.xcdatamodeld */ = {
@@ -606,6 +1071,16 @@
 			);
 			currentVersion = 262A6945260566B800B8E025 /* clipApp.xcdatamodel */;
 			path = clipApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		26EF5E2A26066B4400AB9995 /* appClip.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				26EF5E2B26066B4400AB9995 /* appClip.xcdatamodel */,
+			);
+			currentVersion = 26EF5E2B26066B4400AB9995 /* appClip.xcdatamodel */;
+			path = appClip.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
